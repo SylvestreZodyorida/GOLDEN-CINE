@@ -1,0 +1,417 @@
+*{
+    list-style-type: none;
+}
+
+main{
+    padding-top: 40px;
+}
+.nav{
+    box-shadow: 0px 05px 5px rgb(247, 245, 245);
+    padding-bottom: 20px;
+    list-style-type: none;
+    background: white;
+}
+.nav_app{
+    box-shadow: 0px 05px 5px rgb(253, 252, 252);
+    padding: 10px;
+    margin-top: -10px;
+    list-style-type: none;
+    background: white;
+}
+.all{
+    border-radius: 20px;
+    box-shadow: 0px 05px 5px rgb(243, 240, 240);
+}
+.nav .li{
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px rgb(238, 237, 237) ;
+    background-color: white;
+    margin-top: 3px;
+    padding: 4px;
+}
+.nav ul .li:hover{
+    box-shadow: 0px 5px 0px rgb(205, 224, 248) ;
+}
+.logo{
+    font-size: 21px;
+    padding: 20px;
+    font-weight: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+    margin-right: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(234, 235, 236);
+}
+.search_bar input{
+    box-shadow: 0px 02px 2px rgb(213, 214, 214);
+    margin-right:10px ;
+    border: none;
+
+}
+.search_bar input:focus{
+    box-shadow: 0px 02px 2px rgb(187, 225, 250);
+}
+.notif-footer1 {
+    font-family: mono;
+    font-size: 19px;
+    color: rgb(26, 26, 216);
+}
+.notif-footer2 {
+    font-family: mono;
+    padding-bottom: 10px;
+    font-size: 19px;
+    color: rgba(68, 0, 255, 0.863);
+}
+.notif-footer3 {
+    font-family: mono;
+    padding-bottom: 10px;
+    font-size: 19px;
+    color: rgba(144, 144, 145, 0.863);
+}
+.acc_img
+{
+    border-radius: 8px;
+    width: 100%;
+    transition: 0.8s;
+}
+.acc_img1
+{
+    border-radius: 5px;
+    margin-top: -20px;
+    transition: 0.8s;
+    width: 100%;
+}
+.acc_img:hover{
+    transition: 0.8s;
+}
+.acc_img1:hover{
+    transition: 0.8s;
+}
+.featurette{
+    margin-bottom: 10%;
+    border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  padding: 30px;
+}
+.featurette:nth-child(1){
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 166, 0));
+    border: 1px solid rgb(255, 236, 202);
+}
+.featurette:nth-child(1) p{
+    font-family: Constantia;
+    color: rgb(71, 71, 71);
+}
+.featurette:nth-child(1) h2{
+    font-weight: 600;
+    color: orange;
+}
+.featurette:nth-child(2){
+    background: linear-gradient(to left , rgb(255, 255, 255), rgb(255, 255, 255),rgb(2, 141, 255));
+    border: 1px solid rgb(191, 205, 250);
+    
+}
+.featurette:nth-child(2) p{
+    font-family: Constantia;
+    color: rgb(71, 70, 70);
+}
+.featurette:nth-child(2) h2{
+    font-weight: 600;
+    color: rgb(0, 68, 255);
+}
+
+.featurette:nth-child(3){
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(255, 255, 255),rgb(187, 248, 107));
+    border: 1px solid rgb(203, 255, 173);
+    
+}
+.featurette:nth-child(3) p{
+    font-family: Constantia;
+    color: rgb(97, 95, 95);
+}
+.featurette:nth-child(3) h2{
+    font-weight: 600;
+    color: rgb(123, 255, 0);
+}
+
+.featurette:nth-child(4){
+    background: linear-gradient(to right ,rgb(255, 54, 54), rgb(255, 255, 255), rgb(255, 255, 255));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    border: 1px solid rgb(250, 163, 163);
+}
+.featurette:nth-child(4) p{
+    font-family: Constantia;
+    color: rgb(75, 74, 74);
+}
+.featurette:nth-child(4) img{
+    height: 330px;
+}
+.featurette:nth-child(4) h2{
+    font-weight: 600;
+    color: rgb(255, 17, 0);
+}
+
+.featurette:nth-child(5){
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(255, 255, 255),rgb(37, 37, 37));
+    border: 1px solid rgb(122, 122, 122);
+    
+}
+.featurette:nth-child(5) p{
+    font-family: Constantia;
+    color: rgb(97, 95, 95);
+}
+.featurette:nth-child(5) h2{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.hed_login{
+    border-radius: 5px;
+    margin-bottom: 10%;
+    border: none;
+    transition: 0.5s;
+}
+.hed_login:hover{
+    transition: 0.3s;
+}
+.contact_add{
+    padding: 5px ;
+    box-shadow: 0px 0px 5px gainsboro;
+}
+.card_header{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: rgb(0, 68, 255);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.hed_login label{
+   font-size: 20px;
+   color: rgb(117, 130, 248);
+}
+.hed_login input{
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(196, 191, 191);
+ }
+ .hed_login .check{
+    border-bottom: none;
+    border: 1px solid gainsboro;
+ } .hed_login .check:focus{
+    background-color: rgb(22, 127, 247)  ;
+ }
+ .hed_login select{
+    border-radius: 5px;
+    background-color: none;
+    border-bottom: 3px solid blue;
+    width: 70px;
+    margin-left: 12px;
+ }
+ .hed_login input:focus{
+    transition: 0.3s;
+    box-shadow: 0px 05px  0px rgb(255, 255, 255);
+    background: rgb(248, 248, 242);
+ }
+ .hed_login input:hover{
+    transition: 1s;
+ }
+ .conn{
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 0px 3px rgb(214, 215, 216);
+    margin-right: 10px;
+    padding: 10px;
+ }
+ .reg{
+    box-shadow: 0px 0px 3px rgb(214, 215, 216);
+    border-radius: 5px;
+    padding: 10px; margin-right: 10px;
+    background-color: white;
+ }
+ .reg:hover{
+    box-shadow: 0px 0px 3px rgb(134, 175, 250);
+
+ }
+ .conn:hover{
+    box-shadow: 0px 0px 3px rgb(64, 131, 255);
+
+ }
+.navbar-toggler-icon{
+    color: aqua;
+    border: 1px solid black;
+}
+.msg_success{
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.erreur{
+    background: rgb(248, 155, 132);
+    width: 340px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.liste_ctct_n{
+    background-color: aqua;
+    margin-left: 5%;
+    width: 15%;
+    padding: 5px;
+    margin-right: 2%;
+}
+.liste_ctct_e{
+    background-color: aqua;
+    margin-left: 5%;
+    padding: 5px;
+    margin-right: 2%;
+}
+.liste_ctct_sn{
+    background-color: aqua;
+    margin-left: 5%;
+    padding: 5px;
+    margin-right: 2%;
+}
+.details_list{
+    display: flex;
+}
+.tb_cent{
+    text-align: center;
+}
+.date_creation{
+    position: relative;
+    left: -30px;
+    font-size: 13px;
+    color: rgb(165, 163, 163);
+}
+.pg_list_ctct{
+    padding: 20px;
+    position: relative;
+    left: 0%;
+    box-shadow: 0px 0px 10px gainsboro;
+    border-radius: 6px;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.pg_list_ctct h3{
+    color: blue;
+}
+.search{
+    margin-top: 30px;
+    padding: 4px;
+}
+.actualites h4{
+    padding: 10px;
+    color: rgb(132, 0, 255);
+    text-align: center;
+    box-shadow: 0px 05px 5px rgb(231, 231, 231);
+}
+.actualite h4{
+    padding: 10px;
+    color: rgb(132, 0, 255);
+    text-align: center;
+    box-shadow: 0px 05px 5px rgb(231, 231, 231);
+}
+.actualites .jour{
+    padding: 5px;
+    color: blue ;
+    margin-bottom: 15px;
+    font-size: 21px;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow:0px 05px 5px rgb(233, 233, 236);
+}
+.actualites div span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.resum_actu{
+    padding: 5px;
+}
+.sous_menu{
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.sous_menu li a{
+   padding: 8px;
+   box-shadow:0px 05px 5px rgb(247, 100, 2);
+   background: rgb(235, 233, 233);
+}
+.login_img{
+    width: 370px;
+    height: 300px;
+    margin-top: 0px;
+}
+.signup_img{
+    width: 370px;
+    height: 450px;
+    margin-top: -20px;
+    background-color: white;
+}
+.messagerie{
+}
+.contacts_lists{
+    width: 300px;
+}
+.notif{
+    margin-top: -10px;
+    padding: 5px;
+    font-size: 13px;
+    background: rgb(240, 140, 74);
+    color: black;
+    border-radius: 20px;
+}
+
+
+.back_top{
+    padding: 8px ;
+    border-radius: 5px;
+    background: rgb(238, 237, 237);
+    list-style-type: none;
+    text-decoration: none;
+    text-underline-offset: unset;
+    
+}
+.footer{
+    padding-bottom: 50px;
+    padding-top: 60px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(192, 191, 191)   ;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.footer h4{
+    color: rgb(169, 170, 170);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

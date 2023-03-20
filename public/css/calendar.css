@@ -1,0 +1,113 @@
+.wrapper{
+  background: #fff;
+  border-radius: 10px;
+  height: 480px;
+  margin-bottom: 13px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  padding:20px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+  margin-top: -20px;
+}
+header .icons span{
+  margin: 0 1px;
+  cursor: pointer;
+  padding: 10px;
+  color: #677df8;
+  text-align: center;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-left: 20px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 10px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+.today{
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+  color: #202020;
+  font-weight: 600;
+  background: linear-gradient(to left,rgb(255, 255, 255),rgb(227, 236, 255));
+}
+.content_title{
+  overflow-y: auto;
+  padding: 10px;
+  height: 370px;
+  border-radius: 5px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  border: 1px solid gainsboro;
+}
+:is(.content_title)::-webkit-scrollbar{
+  border-radius: 5px;
+  background: linear-gradient(to top,rgb(255, 255, 255),rgb(255, 185, 81));
+  width: 10px;
+  height: 600px;
+}
+.content_parent{
+  margin-left: 05px;
+
+}
+
