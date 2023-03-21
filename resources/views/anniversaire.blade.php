@@ -52,7 +52,7 @@
                                                 <p>
                                                     🔔 C'est l'aniversaire de <span>{{$contact->name}}</span> aujourd'hui 
                                                 </p>
-                                            @endif
+                                            @endif      
                                         @endforeach
                                     </div>
                                 @else
@@ -71,25 +71,46 @@
                                 @if(count($contacts1 )>0)
                                     <div class="content_title">
                                         @foreach($contacts1 as $contact)
-                                            @if($addDay <  $contact->date_naiss)
+                                            @if($finalDate == $contact->date_naiss)
                                                 <p>
-                                                    🔔 C'est bientôt l'aniversaire de <span>{{$contact->name}}</span>  
+                                                    🔔 C'est  l'aniversaire de <span>{{$contact->name}}</span>  demain
                                                 </p>
                                             @endif
                                         @endforeach
+                                        @if($finalDate != $contact->date_naiss)
+                                            <p>
+                                                🔔 Aucun de vos contact ne fêtera son aniversaire  demain
+                                            </p>
+                                        @endif
                                     </div>
                                 @else
                                     <div class="content_title">
                                         <p>
-                                            Aucun de vos contact ne fêtera son aniversaire  
+                                            🔔 Vous n'avez enrégistré aucun contact  
                                         </p>
                                     </div> 
                                 @endif
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                        2
+                    <div class="tab-pane fade container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        @if(count($contacts1 )>0)
+                            <div class="content_title">
+                                @foreach($contacts1 as $contact)
+                                    @if($mdy < $contact->date_naiss)
+                                        <p>
+                                            🔥 <span>{{$contact->name ." ". $contact->surname}}</span> fêtera son aniversaire  le   {{(new DateTime($contact->date_naiss))->format("d F Y")}}
+                                        </p>
+                                    @endif
+                                @endforeach
+                            </div>
+                        @else
+                            <div class="content_title">
+                                <p>
+                                    🔔 Vous n'avez enrégistré aucun contact  
+                                </p>
+                            </div> 
+                        @endif
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                         3

@@ -9,6 +9,8 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Carbon;
+use DateTime;
+use DateInterval;
 
 
 class contactController extends Controller
@@ -89,13 +91,13 @@ class contactController extends Controller
         $now=Carbon::now();
         $today=Carbon::today() ;
         $mdy=date_format($today,'20y-m-d');
-        //$daysToAdd = 1;
-       //
-        $addDay=date_format($today,'20y-m-d');
-       // $addOneDay = $addDay->addDays($daysToAdd);
+
+        $addDay=new DateTime();
+        $addOneDay = $addDay->add(new DateInterval("P1D"));
+        $finalDate=$addOneDay->format("Y-m-d");
         $contacts = Contacts::all();
         $contacts1 = Contacts::all();
-        return view('anniversaire', compact("contacts","contacts1","mdy","today","addDay"));
+        return view('anniversaire', compact("contacts","contacts1","mdy","today","addDay","addOneDay","finalDate"));
     }
     
 }
