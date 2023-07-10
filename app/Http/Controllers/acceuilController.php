@@ -14,4 +14,8 @@ class acceuilController extends Controller
     {
         return view('acceuil');
     }
+    public function profile()
+    {
+        return view('profile');
+    }
 }

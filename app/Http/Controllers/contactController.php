@@ -44,7 +44,7 @@ class contactController extends Controller
         return back()->with("success", " : Contact crée ✅ !");;
     }
     public function liste() {
-        $contacts = Contacts::orderBy("name","asc")->paginate(5);
+        $contacts = User::orderBy("name","asc")->paginate(5);
         return view("liste_contacts", compact("contacts"));
     }
 
